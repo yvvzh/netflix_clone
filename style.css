@@ -146,13 +146,71 @@ body {
 .movie-promotion-container {
     height: 1000px;
     width: 100%;
-    background-color: red;
     position: absolute;
     top: 0;
 }
 
 .movie-promotion-container .movie-promotion-image {
-    height: 100%;
+    height: auto;
     width: 100%;
     object-fit: cover;
+}
+
+.movie-promotion-container .movie-promotion-infos {
+    position: absolute;
+    top: 0;
+    margin-top: 16%;
+    margin-left: 3%;
+}
+
+.movie-promotion-container .movie-promotion-infos .movie-promotion-logo img {
+    height: 10vw;
+}
+
+.movie-promotion-container .movie-promotion-infos .movie-promotion-synopsis p {
+    max-width: 36%;
+    font-size: 1.2vw;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.45);
+}
+
+.movie-promotion-container .movie-promotion-infos .movie-promotion-buttons {
+    height: 3vw;
+    width: 23.2vw;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.movie-promotion-container .movie-promotion-infos .movie-promotion-buttons .action-buttons {
+    height: 100%;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.movie-promotion-container .movie-promotion-infos .movie-promotion-buttons .play {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 1.2vw;
+    font-weight: 700;
+    width: 44%;
+}
+
+.movie-promotion-container .movie-promotion-infos .movie-promotion-buttons #play-icon {
+    font-size: 3.5vw;
+    margin-left: -23px;
+}
+
+.movie-promotion-container .movie-promotion-infos .movie-promotion-buttons .more-infos {
+    background-color: #565656;
+    color: #ffffff;
+    font-size: 1.2vw;
+    font-weight: 700;
+    width: 52%;
+}
+
+.movie-promotion-container .movie-promotion-infos .movie-promotion-buttons #infos-icon{
+    font-size: 2vw;
+    margin-right: 5%;
 }
