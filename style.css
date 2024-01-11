@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #000000;
+    color: #ffffff;
+}
+  
+.header-container {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.027) 0%, rgba(0, 0, 0, 0.819) 100%);
+    color: #f1f1f1;
+    position: sticky;
+    top: 0;
+    height: auto;
+    min-height: 70px;
+    z-index: 1;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    padding: 0 6% 0 3%;
+}
+
+.header-container .netflix-logo {
+    height: 2.3vw;
+    max-height: 31px;
+    min-height: 18px;
+}
+
+.header-container ul {
+    list-style: none;
+    display: flex;
+    padding-left: 1.96%;
+}
+
+.header-container ul li {
+    padding: 0 1.5%;
+    min-width: fit-content;
+}
+
+.header-container ul li a {
+    color: #e3e3e3;
+    font-size: 13.5px;
+    text-decoration: none;
+    padding-right: 6px;
+}
+
+.header-container .main-nav-menu .active-nav-element {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.header-container .end-nav-menu {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 11px;
+}
+
+.header-container .end-nav-menu .end-nav-element {
+    padding: 0 10%;
+    height: 2vw;
+    min-height: 32px;
+    width: 2vw;
+    min-width: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-icon {
+    position: relative;
+    height: 50px;
+    padding-right: 8px;
+}
+  
+.search-icon .input {
+    background-color: transparent;
+    font-size: 14px;
+    border: none;
+    height: 0px;
+    width: 0px;
+    transition: width 0.3s ease, transform 0.3s ease;
+    color: #e3e3e3;
+    padding-left: 50px;
+}
+  
+.btn {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    transition: transform 0.3s ease;
+}
+  
+.btn:focus, .input:focus {
+    outline: none;
+}
+  
+.search-icon.active .input {
+    background-color: #1a1a1a;
+    margin-top: 4px;
+    width: 220px;
+    height: 36px;
+    border: 1px solid #f1f1f1;
+    transform: translateX(-120px);
+}
+  
+.search-icon.active .btn {
+    transform: translateX(-120px);
+}
+
+.header-container .end-nav-menu .end-nav-element div .bx-search{
+    font-size: 27px;
+    color: #f1f1f1;
+}
+
+.header-container .end-nav-menu .end-nav-element div .bx-bell{
+    font-size: 22px;
+    padding-right: 10px;
+}
+
+.header-container .end-nav-menu .end-nav-element .profile-menu-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container .end-nav-menu .end-nav-element .profile-menu-icon .avatar {
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+}
+
+.header-container .end-nav-menu .end-nav-element .profile-menu-icon i {
+    font-size: 10px;
+    padding-left: 10px;
+}
