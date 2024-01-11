@@ -10,7 +10,8 @@ body {
 .header-container {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.027) 0%, rgba(0, 0, 0, 0.819) 100%);
     color: #f1f1f1;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     height: auto;
     min-height: 70px;
@@ -23,7 +24,7 @@ body {
 
 .header-container .netflix-logo {
     height: 2.3vw;
-    max-height: 31px;
+    max-height: 30px;
     min-height: 18px;
 }
 
@@ -40,7 +41,7 @@ body {
 
 .header-container ul li a {
     color: #e3e3e3;
-    font-size: 13.5px;
+    font-size: 14px;
     text-decoration: none;
     padding-right: 6px;
 }
@@ -54,11 +55,10 @@ body {
     display: flex;
     align-items: center;
     margin-left: auto;
-    margin-right: 11px;
+    margin-right: 6%;
 }
 
 .header-container .end-nav-menu .end-nav-element {
-    padding: 0 10%;
     height: 2vw;
     min-height: 32px;
     width: 2vw;
@@ -66,6 +66,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-right: 14px;
 }
 
 .search-icon {
@@ -134,9 +135,24 @@ body {
     height: 30px;
     width: 30px;
     object-fit: cover;
+    border-radius: 5px;
 }
 
 .header-container .end-nav-menu .end-nav-element .profile-menu-icon i {
     font-size: 10px;
     padding-left: 10px;
+}
+
+.movie-promotion-container {
+    height: 1000px;
+    width: 100%;
+    background-color: red;
+    position: absolute;
+    top: 0;
+}
+
+.movie-promotion-container .movie-promotion-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
