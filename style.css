@@ -5,6 +5,7 @@ body {
     margin: 0;
     background-color: #000000;
     color: #ffffff;
+    overflow-x: hidden;
 }
   
 .header-container {
@@ -135,12 +136,21 @@ body {
 .header-container .end-nav-menu .end-nav-element div .bx-bell{
     font-size: 22px;
     padding-right: 10px;
+    cursor: pointer;
 }
 
 .header-container .end-nav-menu .end-nav-element .profile-menu-icon {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
+}
+
+.header-container .end-nav-menu .end-nav-element .profile-menu-icon:hover .bxs-down-arrow {
+    transition: 0.5s;
+    transform: rotate(180deg);
+    padding-right: 10px;
+    padding-left: 0;
 }
 
 .header-container .end-nav-menu .end-nav-element .profile-menu-icon .avatar {
@@ -153,6 +163,78 @@ body {
 .header-container .end-nav-menu .end-nav-element .profile-menu-icon i {
     font-size: 10px;
     padding-left: 10px;
+}
+
+.header-container .end-nav-menu .end-nav-element .profile-menu-icon .profile-menu-area {
+    display: flex;
+    position: absolute;
+    height: 270px;
+    width: 220px;
+    top: 0;
+    margin-top: 2.4%;
+    right: 0;
+    margin-right: 11%;
+    background-color: rgba(255, 0, 0, 0.295);
+    align-items: end;
+}
+
+.header-container .end-nav-menu .end-nav-element .profile-menu-icon .profile-menu-area .profile-menu {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 250px;
+    width: 100%;
+    background-color: rgba(0, 128, 0, 0.603);
+}
+
+.header-container .end-nav-menu .end-nav-element .profile-menu-icon .profile-menu-area .profile-menu ul img {
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+}
+
+.header-container .end-nav-menu .end-nav-element .profile-menu-icon .profile-menu-area .profile-menu ul i {
+    height: 30px;
+    width: 30px;
+    font-size: 24px;
+}
+
+#alt-profile {
+    padding-left: 16px;
+    padding-top: 12px;
+}
+
+#alt-profile-image {
+    margin-right: 16px;
+}
+
+.header-container .end-nav-menu .end-nav-element .profile-menu-icon .profile-menu-area .profile-menu ul {
+    flex-direction: column;
+    background-color: #000000;
+    height: 95%;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.header-container .end-nav-menu .end-nav-element .profile-menu-icon .profile-menu-area .profile-menu ul li {
+    font-size: 13px;
+    padding: 0;
+    margin: 0;
+}
+
+.header-container .end-nav-menu .end-nav-element .profile-menu-icon .profile-menu-area .profile-menu ul .disconnect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px #8d8d8d;
+    border-top-style: solid;
+    height: 40px;
+    width: 100%;
+}
+
+.header-container .end-nav-menu .end-nav-element .profile-menu-icon .profile-menu-area .profile-menu ul li:hover a {
+    text-decoration: underline;
 }
 
 .movie-promotion-container {
